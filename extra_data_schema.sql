@@ -1,3 +1,13 @@
+CREATE TABLE csa_tests (
+    id serial PRIMARY KEY,
+    code character varying(50) UNIQUE NOT NULL,
+    extradata jsonb
+);
+
+ALTER TABLE csa_tests OWNER TO postgres;
+
+
+
 CREATE TABLE csa_vests (
     id serial PRIMARY KEY,
     code character varying(50) UNIQUE NOT NULL
