@@ -1,7 +1,7 @@
 CREATE TABLE csa_tests (
     id serial PRIMARY KEY,
     code character varying(50) UNIQUE NOT NULL,
-    extradata jsonb
+    extradata json
 );
 
 ALTER TABLE csa_tests OWNER TO postgres;
